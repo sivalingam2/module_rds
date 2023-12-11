@@ -1,0 +1,14 @@
+variable "tags" {}
+variable "env" {}
+variable "subnet_ids" {}
+variable "rds_type" {}
+variable "vpc_id" {}
+variable "db_port" {}
+variable "sg_ingress_cidr" {}
+variable "engine_family" {}
+variable "backup_retention_period" {}
+variable "preferred_backup_window" {}
+variable "engine_version" {}
+variable "engine" {}
+variable "instance_count" {}
+variable "instance_class" {}
