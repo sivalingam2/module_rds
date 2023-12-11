@@ -12,3 +12,4 @@ variable "engine_version" {}
 variable "engine" {}
 variable "instance_count" {}
 variable "instance_class" {}
+variable "skip_final_snapshot" {}

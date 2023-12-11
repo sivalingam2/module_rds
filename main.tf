@@ -42,6 +42,8 @@ resource "aws_rds_cluster" "main" {
   master_password         = data.aws_ssm_parameter.master_password.value
   backup_retention_period = var.backup_retention_period
   preferred_backup_window = var.preferred_backup_window
+  skip_final_snapshot              = var.skip_final_snapshot
+  tags                             = merge(local.tags, { Name = "${local.name_prefix}-cluster" })
 }
 resource "aws_rds_cluster_instance" "cluster_instances" {
   count              = var.instance_count
